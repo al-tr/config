@@ -30,8 +30,8 @@
 	d = diff
 	chmod = update-index --chmod=+x
 [user]
-	email = set email
-	name = set name
+	email = alstrap50000@gmail.com
+	name = Oleg Rachitsky
 [advice]
 [credential]
 	helper = wincred
