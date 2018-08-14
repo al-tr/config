@@ -1,0 +1,37 @@
+[user]
+[core]
+	autocrlf = true
+	excludesfile = C:\\Users\\Username\\.gitignore
+	editor = notepad
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	required = true
+	clean = git-lfs clean -- %f
+[alias]
+	ch = checkout
+	b = branch
+	c = commit
+	s = status
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	a = add
+	m = merge
+	g = log --oneline --decorate --graph -15
+	f = fetch --all
+	ss = status -s
+	aa = add -A
+	bb = branch -vv
+	ll = log --graph --abbrev-commit --decorate --first-parent
+	wipe = checkout HEAD -- .
+	ca = commit --amend
+	ma = merge --abort
+	bd = branch -D
+	dno = diff --name-only
+	d = diff
+	chmod = update-index --chmod=+x
+[user]
+	email = set email
+	name = set name
+[advice]
+[credential]
+	helper = wincred
