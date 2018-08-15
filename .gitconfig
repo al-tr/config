@@ -16,7 +16,7 @@
 	last = log -1 HEAD
 	a = add
 	m = merge
-	g = log --graph --format="%C(auto,green)%h%C(auto,reset)%C(auto,yellow bold)%d%C(auto,reset) %s > %C(auto,green)%ae%C(auto,reset)" -15
+	g = log --graph --format=\"%C(auto,green)%h%C(auto,reset)%C(auto,yellow bold)%d%C(auto,reset) %s > %C(auto,green)%ae%C(auto,reset)\" -15
 	f = fetch --all
 	ss = status -s
 	aa = add -A
