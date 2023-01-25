@@ -1,34 +1,36 @@
 [user]
 [core]
 	autocrlf = true
-	excludesfile = C:\\Users\\Username\\.gitignore
 	editor = notepad
+	excludesfile = C:\\Users\\Username\\.gitignore
 [filter "lfs"]
+	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	required = true
-	clean = git-lfs clean -- %f
 [alias]
-	ch = checkout
-	b = branch
-	c = commit
-	s = status
-	unstage = reset HEAD --
-	last = log -1 HEAD
 	a = add
-	m = merge
-	g = log --graph --format=\"%C(auto,green)%h%C(auto,reset)%C(auto,yellow bold)%d%C(auto,reset) %s > %C(auto,green)%ae%C(auto,reset)\" -15
-	f = fetch --all
-	ss = status -s
 	aa = add -A
+	b = branch
 	bb = branch -vv
-	ll = log --graph --abbrev-commit --decorate --first-parent
-	wipe = checkout HEAD -- .
-	ca = commit --amend
-	ma = merge --abort
 	bd = branch -D
-	dno = diff --name-only
-	d = diff
+	c = commit
+	ca = commit --amend
+	ch = checkout
 	chmod = update-index --chmod=+x
+	d = diff
+	dc = diff --cached
+	dno = diff --name-only
+	f = fetch --all
+	g = log --graph --format=\"%C(auto,green)%h%C(auto,reset)%C(auto,yellow bold)%d%C(auto,reset) %s > %C(auto,green)%ae%C(auto,reset)\" -10
+	last = log -1 HEAD
+	ll = log --graph --abbrev-commit --decorate --first-parent
+	m = merge
+	ma = merge --abort
+	s = status
+	ss = status -s
+	totalwipe = clean -f -d
+	unstage = reset HEAD --
+	wipe = checkout HEAD -- .
 [user]
 	email = 
 	name = 
