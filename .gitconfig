@@ -1,4 +1,6 @@
 [user]
+	email = 
+	name = 
 [core]
 	autocrlf = true
 	editor = notepad
@@ -31,9 +33,6 @@
 	totalwipe = clean -f -d
 	unstage = reset HEAD --
 	wipe = checkout HEAD -- .
-[user]
-	email = 
-	name = 
 [advice]
 [credential]
 	helper = wincred
