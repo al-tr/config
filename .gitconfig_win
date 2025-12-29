@@ -1,9 +1,10 @@
 [user]
-	email =
-	name =
+	email = 
+	name = 
 [core]
-	autocrlf=input
-	excludesfile = ~/.gitignore
+	autocrlf = true
+	editor = notepad
+	excludesfile = C:\\Users\\Username\\.gitignore
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -33,4 +34,5 @@
 	unstage = reset HEAD --
 	wipe = checkout HEAD -- .
 [advice]
-
+[credential]
+	helper = wincred
