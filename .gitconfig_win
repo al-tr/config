@@ -30,6 +30,7 @@
 	ma = merge --abort
 	r = remote
 	ra = remote add
+	rr = remote remove
 	rv = remote -v
 	s = status
 	ss = status -s
