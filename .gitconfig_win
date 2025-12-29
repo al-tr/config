@@ -28,6 +28,9 @@
 	ll = log --graph --abbrev-commit --decorate --first-parent
 	m = merge
 	ma = merge --abort
+	r = remote
+	ra = remote add
+	rv = remote -v
 	s = status
 	ss = status -s
 	totalwipe = clean -f -d
