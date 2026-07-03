@@ -37,4 +37,7 @@
 	unstage = reset HEAD --
 	wipe = checkout HEAD -- .
 [advice]
-
+[init]
+	defaultBranch = main
+[pager]
+	branch = false
